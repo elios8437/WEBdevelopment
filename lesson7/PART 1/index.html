@@ -4,15 +4,17 @@
     <title>KODIM I RI</title>
     <body>
         <form>
+            <fieldset>
+                <legend>personal information</legend>
             <label for="first name">frist name</label><br>
-            <input type="text" id="firstname" name="firstname">
+            <input type="text" id="firstname" name="firstname" value="JOHN" readonly>
             <br>
             <label for="last name"> last name</label><br>
-            <input type="text" id="last name" name="last name"><BR>
+            <input type="text" id="last name" name="last name" disabled><BR>
              <label for="email">email</label><br>
-             <input type="email" id="email" name="email"><br>
+             <input type="email" id="email" name="email" required><br>
              <label for="password">Password</label><br>
-             <input type="password" id="password" name="password"><br>
+             <input type="password" id="password" name="password" size="40" placeholder="Password"><br>
             
              <label>Gender</label><br>
              <input type="radio" id="male" name="male">
@@ -36,11 +38,13 @@
               <option value="dog">dog</option>
               <option value="cat">cat</option>
               <option value="parrot">parrot</option>
-            </select>
+            </select><br><br>
+            <textarea name="message" rows="10" cols="20" maxlength="50" ></textarea><br><br>
              
 
-              <br><br>
+             
              <input type="submit" id="submit" name="sumbit"><br>
+             </fieldset>
               
 
 
